@@ -2,11 +2,12 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <%- include('partials/head.ejs') %> 
   </head>
   <body>
     <%- include('partials/navigation.ejs') %> 
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <%- include('partials/footer.ejs') %>
   </body>
 </html>
